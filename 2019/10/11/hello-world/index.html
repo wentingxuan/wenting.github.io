@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>hexo yilia主题踩过的坑 | 北北的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="头像设置将头像的图片放置在themes/yilia/source/img目录下在themes/yilia/_config.yml中配置 12#你的头像urlavatar: /img/avatar.jpg  名字修改在blog文件加下_config.yml中修改title 1title: 我的博客  中文乱码问题在blog文件加下_config.yml中修改language 1language: z">
+  <meta name="description" content="头像设置将头像的图片放置在themes/yilia/source/img目录下在themes/yilia/_config.yml中配置 12#你的头像urlavatar: /img/avatar.jpg">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo yilia主题踩过的坑">
 <meta property="og:url" content="http://yoursite.com/2019/10/11/hello-world/index.html">
 <meta property="og:site_name" content="北北的博客">
-<meta property="og:description" content="头像设置将头像的图片放置在themes/yilia/source/img目录下在themes/yilia/_config.yml中配置 12#你的头像urlavatar: /img/avatar.jpg  名字修改在blog文件加下_config.yml中修改title 1title: 我的博客  中文乱码问题在blog文件加下_config.yml中修改language 1language: z">
+<meta property="og:description" content="头像设置将头像的图片放置在themes/yilia/source/img目录下在themes/yilia/_config.yml中配置 12#你的头像urlavatar: /img/avatar.jpg">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-11T07:27:43.841Z">
+<meta property="og:updated_time" content="2019-10-11T07:51:43.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo yilia主题踩过的坑">
-<meta name="twitter:description" content="头像设置将头像的图片放置在themes/yilia/source/img目录下在themes/yilia/_config.yml中配置 12#你的头像urlavatar: /img/avatar.jpg  名字修改在blog文件加下_config.yml中修改title 1title: 我的博客  中文乱码问题在blog文件加下_config.yml中修改language 1language: z">
+<meta name="twitter:description" content="头像设置将头像的图片放置在themes/yilia/source/img目录下在themes/yilia/_config.yml中配置 12#你的头像urlavatar: /img/avatar.jpg">
   
     <link rel="alternative" href="/atom.xml" title="北北的博客" type="application/atom+xml">
   
@@ -43,7 +43,7 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: cadetblue"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -65,7 +65,7 @@
 			</ul>
 		</nav>
     <nav>
-      总文章数1
+      总文章数2
     </nav>
 		<nav class="header-smart-menu">
     		
@@ -74,7 +74,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">不断学习</a>
     			
             
     			
@@ -89,9 +89,9 @@
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
 					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+					<a class="douban" target="_blank" href="#" title="douban"><i class="icon-douban"></i></a>
 		        
 			</div>
 		</nav>
@@ -102,7 +102,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: cadetblue"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -130,9 +130,9 @@
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
 						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+						<a class="douban" target="_blank" href="#" title="douban"><i class="icon-douban"></i></a>
 			        
 				</div>
 			</nav>
@@ -181,6 +181,7 @@
         <h4 id="头像设置"><a href="#头像设置" class="headerlink" title="头像设置"></a>头像设置</h4><p>将头像的图片放置在themes/yilia/source/img目录下<br>在themes/yilia/_config.yml中配置</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#你的头像url</span><br><span class="line">avatar: <span class="regexp">/img/</span>avatar.jpg</span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>
 <h4 id="名字修改"><a href="#名字修改" class="headerlink" title="名字修改"></a>名字修改</h4><p>在blog文件加下_config.yml中修改title</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title: 我的博客</span><br></pre></td></tr></table></figure>
 
@@ -278,6 +279,20 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2019/10/11/live2d-1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          live2d
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -373,7 +388,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">不断学习</a></li>
       
         
       
@@ -446,11 +461,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="https://jkchao.github.io/typescript-book-chinese/#why" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>typescript</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+              <a href="https://www.zhangxinxu.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>张鑫旭</a>
             </li>
           
             <li class="search-li">
@@ -551,5 +566,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
