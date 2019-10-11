@@ -16,7 +16,7 @@
 <meta property="og:description" content="效果 作者动画展示">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="/2019/10/11/live2d-1/live2d.png">
-<meta property="og:updated_time" content="2019-10-11T08:55:37.019Z">
+<meta property="og:updated_time" content="2019-10-11T09:27:38.840Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="live2d">
 <meta name="twitter:description" content="效果 作者动画展示">
@@ -55,6 +55,8 @@
       <!--<img src="/img/avatar.jpg" class="js-avatar show" style="width: 100%;height: 100%;opacity: 1;">-->
 		  <h1 class="header-author"><a href="/">文婷</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">记录生活的美好</p>
 		
 
 		<nav class="header-menu">
@@ -116,6 +118,8 @@
 			<hgroup>
 			  <h1 class="header-author js-header-author">文婷</h1>
 			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录生活的美好<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -189,7 +193,8 @@
 <p>选择对应的模型，通过npm install来下载</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#例如：</span><br><span class="line">npm install live2d-widget-model-nico</span><br></pre></td></tr></table></figure>
 
-
+<p>最后在根目录下_config.yml中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">  #你下载的模块</span><br><span class="line">    use: live2d-widget-model-hijiki</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure>
       
 
       
