@@ -9,6 +9,7 @@
   <title>live2d | 北北的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="效果 作者动画展示">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
 <meta property="og:title" content="live2d">
 <meta property="og:url" content="/2019/10/11/live2d-1/index.html">
@@ -16,7 +17,7 @@
 <meta property="og:description" content="效果 作者动画展示">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="/2019/10/11/live2d-1/live2d.png">
-<meta property="og:updated_time" content="2019-10-11T09:27:38.840Z">
+<meta property="og:updated_time" content="2019-10-11T09:56:48.498Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="live2d">
 <meta name="twitter:description" content="效果 作者动画展示">
@@ -66,11 +67,15 @@
 	        
 				<li><a href="/tags/随笔/">随笔</a></li>
 	        
+				<li><a href="/photo/">相册</a></li>
+	        
+				<li><a href="/tags/typescript/">typescript</a></li>
+	        
 			</ul>
 		</nav>
-    <nav>
-      总文章数2
-    </nav>
+    <!--<nav>-->
+      <!--总文章数4-->
+    <!--</nav>-->
 		<nav class="header-smart-menu">
     		
     			
@@ -78,7 +83,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">不断学习</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">学习网站链接</a>
     			
             
     			
@@ -89,7 +94,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/wentingxuan" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
@@ -127,12 +132,16 @@
 			
 				
 			
+				
+			
+				
+			
 			
 
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/wentingxuan" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
@@ -144,12 +153,16 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 25%"><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li style="width: 25%"><a href="/photo/">相册</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/typescript/">typescript</a></li>
 		        
 				</ul>
 			</nav>
@@ -223,6 +236,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -286,6 +310,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/10/12/typescript-declarative-space/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          typescript声明空间
+        
+      </div>
+    </a>
   
   
     <a href="/2019/10/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
@@ -353,7 +386,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -390,7 +423,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">不断学习</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">学习网站链接</a></li>
       
         
       
@@ -413,6 +446,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">typescript</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

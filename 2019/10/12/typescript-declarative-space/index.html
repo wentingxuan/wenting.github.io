@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href>
-  <title>hexo yilia主题踩过的坑 | 北北的博客</title>
+  <title>typescript声明空间 | 北北的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="头像设置将头像的图片放置在themes/yilia/source/img目录下在themes/yilia/_config.yml中配置 12#你的头像urlavatar: /img/avatar.jpg">
+  <meta name="description" content="在 TypeScript 里存在两种声明空间：类型声明空间与变量声明空间 类型声明空间变量声明空间">
+<meta name="keywords" content="typescript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo yilia主题踩过的坑">
-<meta property="og:url" content="/2019/10/11/hello-world/index.html">
+<meta property="og:title" content="typescript声明空间">
+<meta property="og:url" content="/2019/10/12/typescript-declarative-space/index.html">
 <meta property="og:site_name" content="北北的博客">
-<meta property="og:description" content="头像设置将头像的图片放置在themes/yilia/source/img目录下在themes/yilia/_config.yml中配置 12#你的头像urlavatar: /img/avatar.jpg">
+<meta property="og:description" content="在 TypeScript 里存在两种声明空间：类型声明空间与变量声明空间 类型声明空间变量声明空间">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-14T10:24:32.214Z">
+<meta property="og:updated_time" content="2019-10-12T07:10:56.664Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo yilia主题踩过的坑">
-<meta name="twitter:description" content="头像设置将头像的图片放置在themes/yilia/source/img目录下在themes/yilia/_config.yml中配置 12#你的头像urlavatar: /img/avatar.jpg">
+<meta name="twitter:title" content="typescript声明空间">
+<meta name="twitter:description" content="在 TypeScript 里存在两种声明空间：类型声明空间与变量声明空间 类型声明空间变量声明空间">
   
     <link rel="alternative" href="/atom.xml" title="北北的博客" type="application/atom+xml">
   
@@ -174,46 +175,28 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-typescript-declarative-space" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo yilia主题踩过的坑
+      typescript声明空间
     </h1>
   
 
         
-        <a href="/2019/10/11/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-11T02:55:18.142Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-11</time>
+        <a href="/2019/10/12/typescript-declarative-space/" class="archive-article-date">
+  	<time datetime="2019-10-12T07:02:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="头像设置"><a href="#头像设置" class="headerlink" title="头像设置"></a>头像设置</h4><p>将头像的图片放置在themes/yilia/source/img目录下<br>在themes/yilia/_config.yml中配置</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#你的头像url</span><br><span class="line">avatar: <span class="regexp">/img/</span>avatar.jpg</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-<h4 id="名字修改"><a href="#名字修改" class="headerlink" title="名字修改"></a>名字修改</h4><p>在blog文件加下_config.yml中修改title</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title: 我的博客</span><br></pre></td></tr></table></figure>
-
-<h4 id="中文乱码问题"><a href="#中文乱码问题" class="headerlink" title="中文乱码问题"></a>中文乱码问题</h4><p>在blog文件加下_config.yml中修改language</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">language: zh-CN</span><br></pre></td></tr></table></figure>
-
-<h4 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h4><p>随笔起始就是一个tag分类，只需要在文章前加上tags 随笔就可以<br>注意-后有空格</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line">- 随笔</span><br></pre></td></tr></table></figure>
-
-<h4 id="新建一个分类"><a href="#新建一个分类" class="headerlink" title="新建一个分类"></a>新建一个分类</h4><p>比如新建一个相册的分类，在主题目录下_config.yml文件下menu中加入<br>注意-后有空格</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">相册: <span class="regexp">/photo/</span></span><br></pre></td></tr></table></figure>
-
-<p>在photo.md中加入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type: photo</span><br></pre></td></tr></table></figure>
-
-
+        <p>在 TypeScript 里存在两种声明空间：类型声明空间与变量声明空间</p>
+<h4 id="类型声明空间"><a href="#类型声明空间" class="headerlink" title="类型声明空间"></a>类型声明空间</h4><h4 id="变量声明空间"><a href="#变量声明空间" class="headerlink" title="变量声明空间"></a>变量声明空间</h4>
       
 
       
@@ -242,6 +225,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">typescript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -292,7 +286,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http:/2019/10/11/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http:/2019/10/12/typescript-declarative-space/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -306,15 +300,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/11/live2d-1/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/10/14/hexo-photo/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          live2d
+          hexo新建相册
         
       </div>
     </a>
   
+  
+    <a href="/2019/10/11/live2d-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">live2d</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 

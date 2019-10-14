@@ -1,0 +1,21 @@
+.img-box-ul,.article-entry{
+    float: left;
+    min-height:500px;
+}
+.img-box-ul li{
+    float: left;
+    list-style: none;
+    width:340px;
+    height:auto;
+    padding:20px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.img-box-ul li:hover{
+    transform: scale(1.2);
+}
+.article-entry ul li:before{
+    width:0;
+    height:0;
+}
