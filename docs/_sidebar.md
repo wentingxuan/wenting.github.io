@@ -3,5 +3,7 @@
 * css
   * [flex](css/flex)
   * [pointer-event](css/pointer-event)
+  * [文字颜色自动适配背景色](css/mix-blend-mode)
 * canvas
-  * [对png图进行描边、填充、阴影](others/canvas)
+  * [对png图进行描边、填充、阴影](canvas/canvas)
+  * [利用canvas实现电子签名](canvas/sign)
