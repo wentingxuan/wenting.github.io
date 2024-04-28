@@ -17,7 +17,7 @@ image.src = url;
 image.crossOrigin = "Anonymous";
 ```
 
-一、`填充`
+> `填充`
 
 图片的填充比较简单，首先设置在绘制新形状时要应用的合成操作的类型为'source-in'，
 
@@ -27,7 +27,7 @@ ctx.fillStyle = 'red'  // 想要填充的颜色
 ctx.fillRect(0, 0, canvas.width, canvas.height)
 ```
 
-二、`描边`
+> `描边`
 
 描边实现的逻辑是将原图进行一个偏移，比如描边2px，则将原图向上、下、左
 
@@ -60,7 +60,7 @@ ctx.drawImage(mage1, borderWidth, borderWidth);
 
 当偏移像素越大，锯齿越明显，所以偏移度可以进行动态设置，当偏移像素越小时，可只对8个方位进行偏移。
 
-三、`绘制阴影`
+> `绘制阴影`
 
 ```
 ctx.shadowColor = "gray"; 	// 颜色

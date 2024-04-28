@@ -1,4 +1,3 @@
-# `电子签名`
 
 >  原理
 
@@ -83,3 +82,77 @@ const drawLine = (x,y) => {
 ```
 
 ![avatar](./../images/css/canvas/2.png)
+
+> 回撤
+
+回撤需要先对之前绘制的图形进行保存，按下到抬起算一次操作
+
+先定义一个`historyArr`对操作过程进行存储, 定义一个变量保存当前操作信息
+
+```js
+let historyArr = []
+let currentPath = {}
+```
+
+鼠标按下时，开始记录当前操作
+```js
+currentPath = {
+  color: ctx.strokeStyle,
+  width: ctx.lineWidth,
+  points: [{ x: e.pageX, y: e.pageY }]
+}
+```
+
+鼠标移动过程中，对绘制的点进行存储
+
+```js
+currentPath.points.push({ x: e.pageX, y: e.pageY });
+```
+
+鼠标抬起时，将本次绘制记录存储到`historyArr`中
+```js
+historyArr.push(currentPath)
+```
+
+进行回退操作，需要在历史记录中从最后一条进行删除
+```js
+revoke.addEventListener('click', function() {
+  if (historyArr.length === 0) return;
+  // 删除最后一条的记录
+  historyArr.pop()
+  ctx.clearRect(0, 0, cvs.width, cvs.height);
+  drawPaths(historyArr);
+})
+
+function drawPaths(paths) {
+  paths.forEach(path => {
+    ctx.beginPath();
+    ctx.strokeStyle = path.color;
+    ctx.lineWidth = path.width;
+    ctx.moveTo(path.points[0].x, path.points[0].y);
+    // path.points.slice(1) 少画 与  path.points 区别是少画一笔和正常笔数
+    path.points.slice(1).forEach(point => {
+      ctx.lineTo(point.x, point.y);
+    });
+    ctx.stroke();
+  });
+}
+```
+
+> 保存
+
+保存图片主要是通过 canvas.toDataURL 生成的是base64，
+然后通过a标签进行下载
+
+```js
+saveBtn.addEventListener('click',()=>{
+  let imgURL = canvas.toDataURL({format: "image/png", quality:1, width:600, height:400});
+  let link = document.createElement('a');
+  link.download = "tupian";
+  link.href = imgURL;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+})
+
+```
