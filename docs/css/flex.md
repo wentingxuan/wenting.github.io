@@ -142,10 +142,53 @@
 1：**`order`** 排序，默认为0，值越小越靠前。
 
 ```
-<!DOCTYPE html><html><head>    <meta charset="utf-8">    <style>        .parent {            display: flex;            color: #ffffff;        }        .child-1 {            background-color: brown;        }        .child-2 {            background-color: cadetblue;        }        .child-3 {            background-color: cornflowerblue;            order: 1;        }        .child-4 {            background-color: aqua;        }        .child-5 {            background-color: rgb(125, 194, 35);        }        .child-6 {            background-color: rgb(233, 83, 98);        }        .child {            padding: 30px;            text-align: center;            margin: 10px;        }    </style></head><body>    <div class="parent">        <div class="child child-1">1</div>        <div class="child child-2">2</div>        <div class="child child-3">3</div>        <div class="child child-4">4</div>        <div class="child child-5">5</div>        <div class="child child-6">6</div>    </div></body></html>
-```
-
-```
+<!DOCTYPE html>
+    <html>
+        <head>    
+            <meta charset="utf-8">    
+                <style>        
+                    .parent {            
+                        display: flex;            
+                        color: #ffffff;        
+                    }        
+                    .child-1 {            
+                        background-color: brown;        
+                    }        
+                    .child-2 {            
+                        background-color: cadetblue;        
+                    }        
+                    .child-3 {            
+                        background-color: cornflowerblue;            
+                        order: 1;        
+                    }        
+                    .child-4 {            
+                        background-color: aqua;        
+                    }        
+                    .child-5 {            
+                        background-color: rgb(125, 194, 35);        
+                    }        
+                    .child-6 {            
+                        background-color: rgb(233, 83, 98);        
+                    }        
+                    .child {           
+                        padding: 30px;            
+                        text-align: center;            
+                        margin: 10px;        
+                    }    
+                </style>
+            </meta>
+        </head>
+        <body>    
+            <div class="parent">        
+                <div class="child child-1">1</div>        
+                <div class="child child-2">2</div>        
+                <div class="child child-3">3</div>        
+                <div class="child child-4">4</div>        
+                <div class="child child-5">5</div>        
+                <div class="child child-6">6</div>    
+            </div>
+        </body>
+    </html>
 ```
 
 给child-3设置order后，3展示在了最后一位
